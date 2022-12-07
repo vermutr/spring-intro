@@ -2,6 +2,7 @@ package com.example;
 
 import com.example.service.MessageService;
 import com.example.service.MyNameMessageService;
+import com.example.service.RandomTextMessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -18,6 +19,12 @@ public class MyApp {
         applicationContext =
                 new AnnotationConfigApplicationContext(MyApp.class);
         MyNameMessageService myNameMessageService = (MyNameMessageService) applicationContext.getBean("myNameMessageService");
+        RandomTextMessageService randomTextMessageService =
+                (RandomTextMessageService) applicationContext.getBean("randomTextMessageService");
+
+
         System.out.println(myNameMessageService.getMessage());
+        System.out.println(randomTextMessageService.getMessage());
+
     }
 }
