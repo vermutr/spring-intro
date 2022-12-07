@@ -7,7 +7,7 @@
 1. Zaimportuj projekt do IntelliJ:
 1. W pliku `com.example.MyNameMessageServiceTest` w teście `shouldReturnMyNameAsMessage` ustaw wartość zmiennej `expectedMessage` na swoje imię i nazwisko (np. `String expectedMessage = "Jan Kowalski`).
 1. Uruchom test`MyNameMessageServiceTest`, upewnij się że nie działa.
-1. Wprowadź odpowiednie zmiany w klasie `com.example.MyNameMessageService` aby naprawić niedziałający test. 
+1. Wprowadź odpowiednie zmiany w klasie `com.example.service.MyNameMessageService` aby naprawić niedziałający test. 
 1. Uruchomi metodę `main` w klasie `MyApp`, upewnij się że Twoje imię i nazwisko jest wyświetlane na ekranie.
 1. Dodaj klasę `RandomTextMessageService` implementującą `MessageService`. Klasa ta jako swój atrybut powinna posiadać tablicę (lub dowolny kontener) zawierającą 10 różnych wiadomości. Metoda `getMessage` tej klasy powinna zwracać losowo jedną z wiadomości przechowywanych wewnątrz klasy.
 1. Zmodyfikuj plik `applicationContext.xml` tak, aby uruchamiając metodę `main` w klasie `MyApp` wykorzystywana była klasa `RandomTextMessageService` a nie `MyNameMessageService`.
